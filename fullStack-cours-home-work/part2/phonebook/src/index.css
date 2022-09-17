@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.App {
+  padding: 15px;
+}
+.person-p {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-messege {
+  transition: .3s all;
+  display: block;
+  background-color: rgba(134, 134, 134, 0.375);
+  color: rgb(255, 234, 0);
+  border: 3px solid rgba(255, 234, 0, 0.778);
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+  height: 20px;
+}
+.error-messege {
+  transition: .3s all;
+  display: block;
+  background-color: rgba(218, 218, 218, 0.375);
+  color: rgb(255, 0, 0);
+  border: 3px solid rgba(255, 0, 0, 0.778);
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
